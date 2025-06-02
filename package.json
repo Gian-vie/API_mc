@@ -1,0 +1,31 @@
+{
+  "name": "api_mc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc -w",
+    "start": "node ./dist/program.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gian-vie/API_mc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gian-vie/API_mc/issues"
+  },
+  "homepage": "https://github.com/Gian-vie/API_mc#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongose": "^0.0.2-security",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/mongoose": "^5.11.96"
+  }
+}
