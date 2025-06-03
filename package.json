@@ -4,12 +4,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "tsc -w",
-    "start": "node ./dist/program.js"
+    "compile": "tsc -w -diagnostic",
+    "start": "nodemon ./dist/program.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gian-vie/API_mc.git"
+  },
+  "compilerOptions": {
+    "incremental": true
   },
   "keywords": [],
   "author": "",
@@ -26,6 +29,7 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.2",
-    "@types/mongoose": "^5.11.96"
+    "@types/mongoose": "^5.11.96",
+    "nodemon": "^3.1.10"
   }
 }
