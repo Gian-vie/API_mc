@@ -1,11 +1,11 @@
-import { NewService } from "../services/newService";
+import { NewsService } from "../services/newService";
 import { request, response } from "express";
 
 class NewsController {
-    private _service: NewService;
+    private _service: NewsService;
 
     constructor() {
-        this._service = new NewService();
+        this._service = new NewsService();
     }
 
     async get(request: Request, response: Response) {
