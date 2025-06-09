@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/Gian-vie/API_mc.git"
   },
+  "compilerOptions": {
+    "incremental": true
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -26,6 +29,7 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.2",
-    "@types/mongoose": "^5.11.96"
+    "@types/mongoose": "^5.11.96",
+    "nodemon": "^3.1.10"
   }
 }

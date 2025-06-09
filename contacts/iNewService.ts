@@ -1,8 +1,7 @@
 import { Result } from "../infra/result";
+export interface INewsService {
 
-export interface INewService {
-
-    get(id: string);
-
-    getAll(page: number, qnt: number): Promise<Result>;
+  get(id: string);
+  
+  getAll(page: number, qtd: number): Promise<Result>;
 }
