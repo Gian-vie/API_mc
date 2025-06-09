@@ -1,7 +1,7 @@
 import { NewService } from "../services/newService";
 import { request, response } from "express";
 
-class NewController {
+class NewsController {
     private _service: NewService;
 
     constructor() {
@@ -15,7 +15,7 @@ class NewController {
             let result = await this._service.getAll(page, qtd);
             response.status(200).json({ result });
 
-        }caches(error) {
+        }catch(error) {
             response.status(500).json({ error: error.message || error.toString() })
         }
     }
